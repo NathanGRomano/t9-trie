@@ -1,5 +1,6 @@
 var assert = require('assert')
   , Trie = require('../lib/trie')
+	, Node = require('../lib/node')
   , trie = new Trie()
 
 describe('given a trie', function () {
