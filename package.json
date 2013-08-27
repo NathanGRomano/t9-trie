@@ -12,15 +12,17 @@
     "url": "https://github.com/NathanGRomano/t9-trie.git"
   },
   "keywords": [
-		"t9",
-		"trie"
+    "t9",
+    "trie"
   ],
-  "dependencies" : { },
+  "dependencies": {
+    "async": "~0.2.9"
+  },
   "analyze": false,
   "devDependencies": {
-		"mocha":"1.12.0"
+    "mocha": "1.12.0"
   },
-  "bundledDependencies": [ ],  
+  "bundledDependencies": [],
   "license": "MIT",
   "engines": {
     "node": ">=0.6"
