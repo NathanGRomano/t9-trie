@@ -5,11 +5,15 @@ describe('given a t9 instance', function () {
 
 	describe('when adding a string of words', function (done) {
 
-		t9.load('cat dog food iced coffee soup watch knife key car pizza tacos', function (err, count) {
-			
-			assert.equal(err, null);
-			assert.equal(count, 12); 
-			done();
+		it('should add the words', function (doen) {
+
+			t9.load('cat dog food iced coffee soup watch knife key car pizza tacos', function (err, count) {
+		
+				assert.equal(err, null);
+				assert.equal(count, 12); 
+				done();
+
+			});
 
 		});
 
