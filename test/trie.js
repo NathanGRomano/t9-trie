@@ -62,6 +62,7 @@ describe('given a trie', function () {
 				assert.equal(err, null);
 				assert.equal(node instanceof Node, true);
 				assert.equal(node.toString(), 'si');
+				assert.equal(node.children.t.value, 'sit');
 				done();
 			});
 
