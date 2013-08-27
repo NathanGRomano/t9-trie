@@ -1,4 +1,5 @@
-var Node = require('../lib/node')
+var assert = require('assert')
+  , Node = require('../lib/node')
   , root = new Node('1', 'One');
 
 describe('given a node', function () {
