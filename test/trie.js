@@ -1,4 +1,5 @@
-var Trie = require('../lib/trie')
+var assert = require('assert')
+  , Trie = require('../lib/trie')
   , trie = new Trie()
 
 describe('given a trie', function () {
