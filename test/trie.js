@@ -41,7 +41,7 @@ describe('given a trie', function () {
 	
 	describe('when asked to find the single character', function () {
 
-		it('then it should be returned', function () {
+		it('then it should be returned', function (done) {
 
 			trie.find('s', function (err, node) {
 				assert.equal(err, null);
