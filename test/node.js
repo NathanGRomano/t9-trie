@@ -25,7 +25,9 @@ describe('given a node', function () {
 			root.get( '2', function (err, node) {
 
 				assert.equal(err, null);
-				assert.equal(node instanceof Node, true);
+				assert.equal(node instanceof Array, true);
+				assert.equal(node[0] instanceof Node, true);
+				assert.equal(node[0].key, '2');
 				done();
 
 			});
