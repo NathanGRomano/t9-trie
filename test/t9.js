@@ -1,4 +1,5 @@
-var T9 = require('../lib/t9')
+var assert = require('assert') 
+  , T9 = require('../lib/t9')
   , t9 = new T9();
 
 describe('given a t9 instance', function () {
