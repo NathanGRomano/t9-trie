@@ -54,6 +54,21 @@ describe('given a trie', function () {
 
 	});
 
+	describe('when asked to find a word with two characters', function () {
+
+		it('then it should be returned', function (done) {
+			
+			trie.find('si', function (err, node) {
+				assert.equal(err, null);
+				assert.equal(node instanceof Node, true);
+				assert.equal(node.toString(), 'si');
+				done();
+			});
+
+		});
+
+	});
+
 	describe('when asked to find a three character word', function () {
 
 		it('then it should be returned', function (done) {
