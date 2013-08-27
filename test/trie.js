@@ -85,5 +85,19 @@ describe('given a trie', function () {
 
 	});
 
+	describe('when asked to find a value that does not exist', function () {
+
+		it('then an error should be returned', function (done) {
+			
+			trie.find('crap', function (err, node) {
+				assert.equal(err instanceof Error, true);
+				assert.equal(node, undefined); 
+				done();
+			});
+
+		});
+
+	});
+
 });
 
