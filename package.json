@@ -1,0 +1,28 @@
+{
+  "name": "t9-trie",
+  "version": "0.0.1",
+  "author": "Nathan Romano <nathan.g.romano@gmail.com>",
+  "description": "An implemention of T9 using a Trie",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test --ui bdd -R spec"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanGRomano/t9-trie.git"
+  },
+  "keywords": [
+		"t9",
+		"trie"
+  ],
+  "dependencies" : { },
+  "analyze": false,
+  "devDependencies": {
+		"mocha":"1.12.0"
+  },
+  "bundledDependencies": [ ],  
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
