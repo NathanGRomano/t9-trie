@@ -28,6 +28,16 @@ describe('given a t9 instance', function () {
 		});
 	});
 
+	describe('when translating chars to numbers', function  () {
+		it('should translate "cat" into "228"', function (done) {
+			var res = T9.charsToNumbers('cat')
+			console.log(res)
+			assert.equal(res, '228');
+			done();
+		});
+
+	});
+
 	describe('when looking for suggestions provided the input "228"', function () {
 
 		it('should provide us a list with the word "cat"', function (done) {
