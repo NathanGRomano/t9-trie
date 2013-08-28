@@ -19,6 +19,15 @@ describe('given a t9 instance', function () {
 
 	});
 
+	describe('when translating numbers to chars', function () {
+		it('should translate it into [ ["a","b","c"], ["a","b","c"], ["t","u","v"] ]', function (done) {
+			var expect = [ ["a","b","c"], ["a","b","c"], ["t","u","v"] ];
+			var res = T9.numbersToChars('228');
+			assert.deepEqual(res, expect);
+			done();	
+		});
+	});
+
 	describe('when looking for suggestions provided the input "228"', function () {
 
 		it('should provide us a list with the word "cat"', function (done) {
