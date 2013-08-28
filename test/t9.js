@@ -53,4 +53,23 @@ describe('given a t9 instance', function () {
 
 	});
 
+	describe('when looking for suggestions provided the input "5"', function () {
+
+		it('should provide us a node with the character "k" as the value and 2 children nodes that are "kn" and "k"', function (done) {
+
+			t9.lookup('5', function (err, node) {
+				assert.equal(node.toString(), 'k');
+				node.get('3', function (err, a) {
+					assert.equal(a.toString(), 'ke');
+					node.get('6', function (err, b) {
+						assert.equal(b.toString(), 'kn');
+						done();
+					});
+				});
+			});
+
+		});
+
+	});
+
 });
