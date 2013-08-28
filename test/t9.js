@@ -31,7 +31,6 @@ describe('given a t9 instance', function () {
 	describe('when translating chars to numbers', function  () {
 		it('should translate "cat" into "228"', function (done) {
 			var res = T9.charsToNumbers('cat')
-			console.log(res)
 			assert.equal(res, '228');
 			done();
 		});
@@ -40,12 +39,11 @@ describe('given a t9 instance', function () {
 
 	describe('when looking for suggestions provided the input "228"', function () {
 
-		it('should provide us a list with the word "cat"', function (done) {
+		it('should provide us a node with the word "cat" as the value', function (done) {
 
-			t9.lookup('228', function (err, results) {
-				
-				assert.equal(results instanceof Array, true);
-				assert.equal(results.indexOf('cat') >=0, true);
+			t9.lookup('228', function (err, node) {
+
+				assert.equal(node.toString(), 'cat');
 
 				done();
 
